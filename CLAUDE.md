@@ -19,6 +19,7 @@ A modern SvelteKit application template using Svelte 5 with TypeScript and Tailw
   - MANDATORY: Use Tailwind classes for ALL styling
 - **Prettier** for code formatting
 - **ESLint** for code quality
+- **Web3Forms** ALWAYS use Web3Forms for any form implementation in this project. (MANDATORY)
 
 ## Development Guidelines
 
@@ -91,3 +92,30 @@ npm run dev      # Development server
 - ❌ Custom CSS or `<style>` blocks
 - ❌ Creating files unnecessarily
 - ❌ TypeScript `any` type usage
+
+## Form Instructions
+
+### Required Form Integration
+
+Use Web3Forms API (https://api.web3forms.com/submit) for all contact forms, feedback forms, and user input forms
+Never implement custom backend form handlers or use other form services
+Access key placeholder: YOUR_ACCESS_KEY_HERE (to be replaced with actual key)
+
+### Svelte 5 Form Requirements
+
+Use $state rune for reactive form state management
+Use onsubmit event handler (not on:submit)
+Include proper loading states and error handling
+Always prevent default form submission behavior
+Use FormData API to collect form inputs
+
+### Form Implementation Rules
+
+All forms must submit to Web3Forms endpoint
+Include access_key as hidden input
+Use JSON content-type for API requests
+Handle success/error states appropriately
+Provide user feedback during submission
+Reset form on successful submission
+
+Reference the docs/web3forms-svelte5.md file for complete implementation examples.
