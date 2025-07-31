@@ -1,6 +1,6 @@
-# Top-level configuratiob
-name = "my-sveltekit-app"
-main = "build/index.js"
+# Top-level configuration
+name = "svelte-cloudflare-template"
+main = ".svelte-kit/cloudflare/index.js"
 compatibility_date = "2024-01-15"
 compatibility_flags = ["nodejs_compat"]
 
