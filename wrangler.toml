@@ -6,7 +6,7 @@ compatibility_flags = ["nodejs_compat"]
 
 # Static assets configuration for SvelteKit
 [assets]
-directory = "build/client"
+directory = ".svelte-kit/cloudflare"
 binding = "ASSETS"
 
 # Uncomment to use a custom domain
