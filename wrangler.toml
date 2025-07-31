@@ -4,6 +4,11 @@ main = ".svelte-kit/cloudflare/index.js"
 compatibility_date = "2024-01-15"
 compatibility_flags = ["nodejs_compat"]
 
+# Static assets configuration for SvelteKit
+[assets]
+directory = "build/client"
+binding = "ASSETS"
+
 # Uncomment to use a custom domain
 # routes = [
 #   { pattern = "example.com/*", zone_name = "example.com" }
@@ -26,7 +31,7 @@ compatibility_flags = ["nodejs_compat"]
 
 # Build configuration for SvelteKit
 [build]
-command = "npm run build"
+command = "npm install && npm run build"
 
 # Development configuration
 [dev]
