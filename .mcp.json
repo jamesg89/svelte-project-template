@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "exampleMCP": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@example/git-mcp"
+      ],
+      "timeout": 30000
+    }
+  }
+}
