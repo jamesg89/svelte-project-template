@@ -1,6 +1,6 @@
 # Top-level configuration
 name = "svelte-cloudflare-template"
-main = ".svelte-kit/cloudflare/index.js"
+main = ".svelte-kit/cloudflare/_worker.js"
 compatibility_date = "2024-01-15"
 compatibility_flags = ["nodejs_compat"]
 
@@ -9,37 +9,6 @@ compatibility_flags = ["nodejs_compat"]
 directory = ".svelte-kit/cloudflare"
 binding = "ASSETS"
 
-# Uncomment to use a custom domain
-# routes = [
-#   { pattern = "example.com/*", zone_name = "example.com" }
-# ]
-
-# Environment variables
-# [vars]
-# MY_VAR = "production"
-# API_URL = "https://api.example.com"
-
-# KV Namespaces
-# [[kv_namespaces]]
-# binding = "MY_KV"
-# id = "your-kv-namespace-id"
-# preview_id = "your-preview-kv-namespace-id"
-
-# Browser Rendering
-# [browser]
-# command = "npm run build"
-
 # Build configuration for SvelteKit
 [build]
 command = "npm install && npm run build"
-
-# Development configuration
-[dev]
-ip = "localhost"
-port = 8787
-local_protocol = "http"
-
-# Deploy configuration for different environments
-[env.staging]
-name = "my-worker-staging"
-# vars = { API_URL = "https://staging-api.example.com" }
