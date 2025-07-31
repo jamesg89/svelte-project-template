@@ -20,42 +20,6 @@ compatibility_flags = ["nodejs_compat"]
 # id = "your-kv-namespace-id"
 # preview_id = "your-preview-kv-namespace-id"
 
-# R2 Object Storage
-# [[r2_buckets]]
-# binding = "MY_BUCKET"
-# bucket_name = "my-r2-bucket"
-# preview_bucket_name = "my-preview-r2-bucket"
-
-# D1 Database
-# [[d1_databases]]
-# binding = "DB"
-# database_name = "my-database"
-# database_id = "your-database-id"
-
-# Durable Objects
-# [[durable_objects.bindings]]
-# name = "MY_DURABLE_OBJECT"
-# class_name = "MyDurableObject"
-
-# Worker-to-Worker Service Bindings
-# [[services]]
-# binding = "MY_SERVICE"
-# service = "my-other-worker"
-
-# Analytics Engine
-# [[analytics_engine_datasets]]
-# binding = "AE"
-
-# Queue Bindings
-# [[queues.consumers]]
-# queue = "my-queue"
-# max_batch_size = 100
-# max_batch_timeout = 30
-
-# [[queues.producers]]
-# binding = "MY_QUEUE"
-# queue = "my-queue"
-
 # Browser Rendering
 # [browser]
 # command = "npm run build"
@@ -70,20 +34,7 @@ ip = "localhost"
 port = 8787
 local_protocol = "http"
 
-# Worker limits and configuration
-[limits]
-# cpu_ms = 100
-
 # Deploy configuration for different environments
 [env.staging]
 name = "my-worker-staging"
 # vars = { API_URL = "https://staging-api.example.com" }
-
-[env.production]
-name = "my-worker-production"
-# vars = { API_URL = "https://api.example.com" }
-
-# Tail worker for logging (uncomment if needed)
-# [tail_consumers]
-# [[tail_consumers]]
-# service = "my-log-worker"
