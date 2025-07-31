@@ -1,6 +1,6 @@
-# Project Name
+# {Project Name}
 
-A modern web application built with cutting-edge technologies to deliver exceptional user experiences. This project leverages the power of Svelte 5's runes system and SvelteKit's full-stack capabilities to create a fast, responsive, and maintainable application. Whether you're building interactive dashboards, e-commerce platforms, or content management systems, this foundation provides the tools and structure needed for scalable development.
+{A modern web application built with cutting-edge technologies to deliver exceptional user experiences. This project leverages the power of Svelte 5's runes system and SvelteKit's full-stack capabilities to create a fast, responsive, and maintainable application. Whether you're building interactive dashboards, e-commerce platforms, or content management systems, this foundation provides the tools and structure needed for scalable development.}
 
 ## Technology Stack
 
@@ -15,12 +15,10 @@ A modern web application built with cutting-edge technologies to deliver excepti
 - **Tailwind CSS 4.0** for utility-first styling
   - Always use Tailwind classes over vanilla CSS
   - Leverage the latest Tailwind 4.0 features and syntax
+- **Prettier**
+- **eslint**
 
 ## Development Guidelines
-
-### Claude Integration
-- Use `claude --dangerously-skip-permissions` for development operations
-- This allows Claude to make necessary file modifications without permission prompts
 
 ### Code Standards
 - **Svelte 5 Syntax**: Always use the new Svelte 5 event handling syntax
@@ -28,6 +26,7 @@ A modern web application built with cutting-edge technologies to deliver excepti
   - ❌ Incorrect: `<button on:click={handleClick}>Click me</button>`
 - **TypeScript**: Maintain strict type checking throughout the codebase
 - **Tailwind**: Prioritize Tailwind utility classes for all styling needs
+- Prefer descriptive names for variables and functions over commenting code
 
 ### Project Structure
 ```
@@ -54,3 +53,7 @@ When working with Claude on this project:
 - Enforce Svelte 5 syntax in all component examples and code generation
 - Default to Tailwind CSS 4.0 for all styling requirements
 - Maintain TypeScript strict mode compliance
+- Prefer descriptive names for variables and functions over commenting code
+- Check .mcp.json for available MCP servers
+- Utilize Puppeteer MCP server to create screenshots as you developes UI and iterate on screenshots until the UI you create matches the request.
+- Utilize Context7 MCP server to review docs related to the libraries and tech stack used in this project.

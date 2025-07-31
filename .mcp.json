@@ -1,12 +1,21 @@
 {
   "mcpServers": {
-    "exampleMCP": {
+    "puppeteer": {
+      "command": "npx",
+      "args": ["-y", "puppeteer-mcp-server"],
+      "env": {}
+    },
+    "sequential-thinking": {
       "command": "npx",
       "args": [
         "-y",
-        "@example/git-mcp"
-      ],
-      "timeout": 30000
+        "@modelcontextprotocol/server-sequential-thinking"
+      ]
+    },
+    "context7": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp"]
     }
   }
 }
