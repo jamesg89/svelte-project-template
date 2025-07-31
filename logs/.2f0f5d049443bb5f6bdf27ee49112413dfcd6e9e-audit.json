@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\User\\Documents\\2A SVELTEKIT WEB DEV\\Svelte-Proj-Template\\logs\\.2f0f5d049443bb5f6bdf27ee49112413dfcd6e9e-audit.json",
+    "files": [
+        {
+            "date": 1753941527086,
+            "name": "C:\\Users\\User\\Documents\\2A SVELTEKIT WEB DEV\\Svelte-Proj-Template\\logs\\mcp-puppeteer-2025-07-30.log",
+            "hash": "f042f38b834dd935eece0d98ffc373b42f90b1b7a48fd101a16116dc6733ab66"
+        }
+    ],
+    "hashType": "sha256"
+}

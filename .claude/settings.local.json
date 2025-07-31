@@ -1,0 +1,8 @@
+{
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "github.com/browserless/puppeteer-mcp-server",
+    "github.com/modelcontextprotocol/server-sequential-thinking",
+    "github.com/upstash/context7-mcp"
+  ]
+}
