@@ -346,3 +346,11 @@ npm run dev      # Development server
 ---
 
 **Note to Claude Code**: When implementing any feature, always reference the Context7 MCP for relevant documentation first. Do not attempt to implement custom solutions when standardized services (Clerk, D1, Web3Forms) are specified. Always use Svelte 5 syntax and maintain strict TypeScript compliance.
+
+## Environment Variables
+- Real API keys go in `.env` files (never commit these)
+- Use the variable names shown in `docs/PRD.md`
+- For Cloudflare Workers, use `wrangler secret put` for production
+
+## Project Documentation
+- Product Requirements: See `docs/PRD.md`
