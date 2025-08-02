@@ -354,3 +354,9 @@ npm run dev      # Development server
 
 ## Project Documentation
 - Product Requirements: See `docs/PRD.md`
+
+## Deployment Checklist
+- [ ] Claude Code builds the app
+- [ ] I manually run: `wrangler secret put CLERK_SECRET_KEY`
+- [ ] I manually run: `wrangler secret put TMDB_API_KEY`  
+- [ ] Claude Code can then deploy with `wrangler deploy`
